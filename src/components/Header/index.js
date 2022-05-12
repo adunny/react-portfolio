@@ -19,6 +19,7 @@ function Header(props) {
                 onClick={() => {
                   projectsSelected(false);
                   contactSelected(false);
+                  resumeSelected(false);
                 }}
               >
                 About
@@ -43,12 +44,16 @@ function Header(props) {
               >
                 Contact
               </Nav.Link>
-              <Nav.Link href="#resume" onClick={() => {
-                resumeSelected(true);
-                projectsSelected(false);
-                contactSelected(false);
-
-              }}>Resume</Nav.Link>
+              <Nav.Link
+                href="#resume"
+                onClick={() => {
+                  resumeSelected(true);
+                  projectsSelected(false);
+                  contactSelected(false);
+                }}
+              >
+                Resume
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
