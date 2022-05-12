@@ -1,16 +1,27 @@
+import { useState } from 'react';
 import './App.css';
+import About from './components/About';
+import ContactForm from './components/Contact/ContactForm';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Project from './components/Project';
 
 function App() {
+
+  const [projects, projectsSelected] = useState(false);
+  const [contact, contactSelected] = useState(false);
+  
   return (
-    <div>
-      <Header></Header>
+    <>
+      <Header 
+      projectsSelected={projectsSelected}
+      contactSelected={contactSelected}
+      />
       <main>
-        about section, portait, etc...
+        {projects ? (<Project/>) : contact ? (<ContactForm/>) : (<About/>)}
       </main>
-      <Footer></Footer>
-    </div>
+      <Footer/>
+    </>
   );
 }
 
