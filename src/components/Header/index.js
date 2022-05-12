@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
 function Header(props) {
-  const { projectsSelected, contactSelected } = props;
+  const { projectsSelected, contactSelected, resumeSelected } = props;
 
   return (
     <header>
@@ -28,6 +28,7 @@ function Header(props) {
                 onClick={() => {
                   projectsSelected(true);
                   contactSelected(false);
+                  resumeSelected(false);
                 }}
               >
                 Projects
@@ -37,11 +38,17 @@ function Header(props) {
                 onClick={() => {
                   contactSelected(true);
                   projectsSelected(false);
+                  resumeSelected(false);
                 }}
               >
                 Contact
               </Nav.Link>
-              <Nav.Link href="#link">Resume</Nav.Link>
+              <Nav.Link href="#resume" onClick={() => {
+                resumeSelected(true);
+                projectsSelected(false);
+                contactSelected(false);
+
+              }}>Resume</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
