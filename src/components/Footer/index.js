@@ -4,7 +4,7 @@ import liLogo from "../../assets/logos/in21.png";
 
 function Footer() {
   return (
-    <footer className="footer mt-auto py-3 fixed-bottom">
+    <footer className="footer mt-auto py-3">
       <div className="container">
         <div className="row justify-content-center border-top border-3">
           <div className="col-1 py-2">
