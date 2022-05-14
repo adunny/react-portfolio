@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ghLogo from '../../assets/logos/gh-logo64.png';
-import liLogo from '../../assets/logos/in34.png';
+import ghLogo from "../../assets/logos/gh-logo64.png";
+import liLogo from "../../assets/logos/in34.png";
 
 function ContactForm() {
   useEffect(() => {
@@ -52,17 +52,17 @@ function ContactForm() {
   };
 
   const contactCards = [
-      {
-        name: 'GitHub',
-        img: ghLogo,
-        link: 'https://github.com/adunny'
-      },
-      {
-        name: 'LinkedIn',
-        img: liLogo,
-        link: 'https://www.linkedin.com/in/alen-dunn-505b8215b/'
-      }
-  ]
+    {
+      name: "GitHub",
+      img: ghLogo,
+      link: "https://github.com/adunny",
+    },
+    {
+      name: "LinkedIn",
+      img: liLogo,
+      link: "https://www.linkedin.com/in/alen-dunn-505b8215b/",
+    },
+  ];
 
   return (
     <section>
@@ -121,18 +121,22 @@ function ContactForm() {
             )}
           </div>
           <div className="col-6 p-3">
-            <br/>
+            <br />
             {contactCards.map((card) => (
-                <div class="card mb-3 bg-light">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                      <a href={card.link}>
-                      <img src={card.img} class="img-fluid rounded-start" alt="..." />
-                      </a>
+              <div key={card.name} className="card mb-3 bg-light">
+                <div className="row g-0">
+                  <div className="col-md-4">
+                    <a href={card.link}>
+                      <img
+                        src={card.img}
+                        className="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </a>
                   </div>
-                  <div class="col-md-8">
-                    <div class="card-body text-end">
-                      <h5 class="card-title">{card.name}</h5>
+                  <div className="col-md-8">
+                    <div className="card-body text-end">
+                      <h5 className="card-title">{card.name}</h5>
                     </div>
                   </div>
                 </div>
