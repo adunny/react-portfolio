@@ -40,5 +40,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://adunny.github.io/react-portfolio"
+  "homepage": "https://adunny.github.io/react-portfolio",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
