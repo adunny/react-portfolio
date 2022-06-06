@@ -31,7 +31,7 @@ function Resume() {
                         ))}
                     </ul>
                     <h4>
-                        <a className='btn bg-secondary' href="https://docs.google.com/document/d/15xuXPF5xbpa8sjb7lsBYIvV2yuHSv--Wb-FrD3WVG88/edit?usp=sharing">
+                        <a className='btn bg-secondary' href="https://docs.google.com/document/d/1LDjYgBYH8RZ7TR2Rh2IXYCnoXs3kjQsXYmS4zPJDCbs/edit">
                             <span className="text-light">Resume</span>
                             </a>
                     </h4>

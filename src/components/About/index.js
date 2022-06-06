@@ -9,7 +9,7 @@ function About() {
     <section className="container mt-4">
       <div className="row">
         <div className="col-lg-4 col-md-6 col-sm-12">
-          <img className="rounded mx-auto" alt="self-portrait" src="https://placeholder.pics/svg/300" />
+          <img className="rounded mx-auto" alt="self-portrait" style={ {height: '300px', width: '300px'}} src="https://i.imgur.com/4Jo6C4j.png" />
         </div>
         <div className="col-lg-4 col-md-6 col-sm-12">
           <h2>About Me</h2>
@@ -24,17 +24,15 @@ function About() {
       </div>
       <div className="row mt-3">
         <div className="col-md-6 col-lg-6 col-sm-12">
-          <h4>Blurb 1</h4>
+          <h4>Strong Back-End Knowledge</h4>
           <p>
-            Fugiat excepteur mollit deserunt nostrud nostrud voluptate ex esse
-            culpa elit aute.
+            Proficient in working with Node/Express, REST and GraphQL apis, SQL and NoSQL databases.
           </p>
         </div>
         <div className="col-md-6 col-lg-6 col-sm-12">
-          <h4>Blurb 2</h4>
+          <h4>React</h4>
           <p>
-            Fugiat excepteur mollit deserunt nostrud nostrud voluptate ex esse
-            culpa elit aute.
+            Efficent at writing logic to manage state, use hooks, and render components.
           </p>
         </div>
       </div>
