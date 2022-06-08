@@ -22,11 +22,11 @@ function Project() {
       img: 'https://i.imgur.com/ru3cuvx.png'
     },
     {
-      name: "Placeholder Project",
-      desc: "Nulla culpa reprehenderit laboris laborum nulla pariatur tempor anim aliquip labore cupidatat deserunt eu aute.",
-      link: "",
-      repo: "",
-      img: 'https://placeholder.pics/svg/500x200'
+      name: "WhateverNow",
+      desc: "WhateverNow is an easy to use social media application where users can create an account and have access to a feed of different posts by various users.",
+      link: "https://whatever-now.herokuapp.com/",
+      repo: "https://github.com/chloeyarb/Whatever-Now",
+      img: 'https://i.imgur.com/Sbjv56D.png'
     },
   ];
 
