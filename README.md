@@ -9,7 +9,7 @@ My portfolio built with react.
 
 ![image of website](https://i.imgur.com/vzF6iGd.png)
 
-[Link to website](https://adunny.github.io/react-portfolio/)
+[Link to website](https://polar-island-99381.herokuapp.com/)
 
 
   
