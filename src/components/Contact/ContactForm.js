@@ -31,7 +31,7 @@ function ContactForm() {
     }
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     // set err message if the fields are empty
@@ -44,8 +44,24 @@ function ContactForm() {
       return;
     }
 
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      setErrMsg("Message submitted!");
+      
+      if (!response.ok) {
+        throw new Error("Something went wrong..");
+      }
+    } catch (err) {
+      setErrMsg(err.message);
+    }
     // if all is good set state to default
-    setErrMsg("");
     setEmail("");
     setName("");
     setMessage("");
