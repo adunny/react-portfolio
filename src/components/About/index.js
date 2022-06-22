@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import portrait from "../../assets/images/headshot.jpg"
 
 function About() {
   useEffect(() => {
@@ -9,7 +10,7 @@ function About() {
     <section className="container mt-4">
       <div className="row">
         <div className="col-lg-4 col-md-6 col-sm-12">
-          <img className="rounded mx-auto" alt="self-portrait" style={ {height: '300px', width: '300px'}} src="https://i.imgur.com/4Jo6C4j.png" />
+          <img className="rounded mx-auto" alt="self-portrait" style={ {height: '300px', width: '300px'}} src={portrait} />
         </div>
         <div className="col-lg-4 col-md-6 col-sm-12">
           <h2>About Me</h2>
