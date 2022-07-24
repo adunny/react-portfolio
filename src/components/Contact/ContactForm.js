@@ -54,7 +54,7 @@ function ContactForm() {
       });
 
       setErrMsg("Message submitted!");
-      
+
       if (!response.ok) {
         throw new Error("Something went wrong..");
       }
@@ -85,7 +85,7 @@ function ContactForm() {
       <div className="container mt-4">
         <h2>Leave a Message</h2>
         <div className="row">
-          <div className="col-6 p-3">
+          <div className="col-md-6 col-sm-12 p-3">
             <form>
               <div>
                 <label htmlFor="name" className="form-label">
@@ -124,7 +124,7 @@ function ContactForm() {
               </div>
               <button
                 type="button"
-                className="btn btn-primary"
+                className="btn btn-color-2"
                 onClick={handleFormSubmit}
               >
                 Submit
@@ -136,26 +136,17 @@ function ContactForm() {
               </div>
             )}
           </div>
-          <div className="col-6 p-3">
+          <div className="col-md-6 col-sm-12 p-3">
             <br />
             {contactCards.map((card) => (
-              <div key={card.name} className="card mb-3 bg-light">
-                <div className="row g-0">
-                  <div className="col-md-4">
-                    <a href={card.link}>
-                      <img
-                        src={card.img}
-                        className="img-fluid rounded-start"
-                        alt="..."
-                      />
-                    </a>
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body text-end">
-                      <h5 className="card-title">{card.name}</h5>
-                    </div>
-                  </div>
-                </div>
+              <div className="m-3" key={card.name}>
+                <a href={card.link} target="_blank" rel="noreferrer">
+                  <img
+                    src={card.img}
+                    className="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </a>
               </div>
             ))}
           </div>
