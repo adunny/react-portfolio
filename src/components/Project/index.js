@@ -9,8 +9,8 @@ function Project() {
   const projects = [
     {
       name: "GlobalChat",
-      desc: "Real-time instant messaging app (WIP)",
-      link: "https://github.com/adunny/mern-chat-app",
+      desc: "Real-time instant messaging app",
+      link: "https://globalchat0.herokuapp.com/",
       repo: "https://github.com/adunny/mern-chat-app",
       img: "https://i.imgur.com/YdW1pIw.png",
     },
